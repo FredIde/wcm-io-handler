@@ -23,7 +23,7 @@ import java.io.IOException;
 
 import org.apache.sling.api.resource.PersistenceException;
 
-import io.wcm.config.spi.ApplicationProvider;
+import io.wcm.config.application.spi.ApplicationProvider;
 import io.wcm.config.spi.ConfigurationFinderStrategy;
 import io.wcm.config.spi.ParameterProvider;
 import io.wcm.handler.media.format.impl.MediaFormatProviderManagerImpl;

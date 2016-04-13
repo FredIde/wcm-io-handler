@@ -19,7 +19,12 @@
  */
 package io.wcm.handler.url.testcontext;
 
-import io.wcm.config.spi.ApplicationProvider;
+import java.io.IOException;
+
+import org.apache.sling.api.resource.PersistenceException;
+import org.apache.sling.testing.mock.sling.ResourceResolverType;
+
+import io.wcm.config.application.spi.ApplicationProvider;
 import io.wcm.config.spi.ConfigurationFinderStrategy;
 import io.wcm.config.spi.ParameterProvider;
 import io.wcm.handler.url.UrlParams;
@@ -30,11 +35,6 @@ import io.wcm.testing.mock.aem.junit.AemContext;
 import io.wcm.testing.mock.aem.junit.AemContextCallback;
 import io.wcm.testing.mock.wcmio.config.MockConfig;
 import io.wcm.testing.mock.wcmio.sling.MockSlingExtensions;
-
-import java.io.IOException;
-
-import org.apache.sling.api.resource.PersistenceException;
-import org.apache.sling.testing.mock.sling.ResourceResolverType;
 
 /**
  * Sets up {@link AemContext} for unit tests in this application.
